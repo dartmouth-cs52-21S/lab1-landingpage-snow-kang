@@ -12,30 +12,33 @@
   </head>
   <body>
     <nav>
-      <a href="#">About me</a> | <a href="#">Links</a> | <a href="#">Projects</a> 
+      <a href="#">About me</a> | <a href="#">Links</a> |
+      <a href="#">Projects</a>
     </nav>
 
     <h1>Welcome!</h1>
-    
-    <section id="about-me">
-      <img src="" alt="">
-      <h2>About me</h2>
-      <div class="grid-container"> 
-        <div class="grid-item">Fact 1</div>
-        <div class="grid-item">Fact 2</div>
-        <div class="grid-item">Fact 3</div>
-      </div>
 
+    <section id="about-me">
+      <video autoplay muted loop id="kaleidoscope">
+        <source src="media/kaleidoscope.mp4" type="video/mp4" />
+      </video>
+      <h2>About me</h2>
+      <img src="media/coco.jpg" alt="My puppy, Coco" />
+      <div class="flex-container">
+        <div class="flex-item">Fact 1</div>
+        <div class="flex-item">Fact 2</div>
+        <div class="flex-item">Fact 3</div>
+      </div>
     </section>
 
-    <section id="links"> <!-- Similar to league's < -->
+    <section id="links">
+      <!-- Similar to league's < -->
       <h2>Buttons for social media links</h2>
       <nav>
         <button class="social-media-button">Twitch</button>
         <button class="social-media-button">YouTube</button>
         <button class="social-media-button">Instagram</button>
       </nav>
-
     </section>
 
     <section id="projects">
@@ -45,16 +48,13 @@
         <li>Project 2</li>
         <li>Project 3</li>
       </ul>
-
     </section>
-      <h2>Guestbook</h2>
-      <form action="#">
-        <label for="username">Send your username so I know you stopped by:</label>
-        <input type="text" id="username" name="username">
-      </form>
-    <section>
-
-    </section>
+    <h2>Guestbook</h2>
+    <form action="#">
+      <label for="username">Send your username so I know you stopped by:</label>
+      <input type="text" id="username" name="username" />
+    </form>
+    <section></section>
 
     <footer>
       <i class="fab fa-twitch"></i>
