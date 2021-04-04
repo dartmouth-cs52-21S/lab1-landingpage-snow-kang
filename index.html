@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/674cca6809.js"
       crossorigin="anonymous"
@@ -41,49 +45,77 @@
     <div class="container">
       <a class="anchor" id="about-me-anchor"></a>
       <section id="about-me">
-        <img src="media/bird.gif" id="kaleidoscope" />
-        <img src="media/coco.jpg" id="coco" alt="My puppy, Coco" />
-        <button id="">Play</button>
-        <div class="flex-container">
-          <div class="flex-item">Fact 1</div>
-          <div class="flex-item">Fact 2</div>
-          <div class="flex-item">Fact 3</div>
+        <h1 class="logo-text">SNOW'S<br />WONDERLAND</h1>
+        <img src="media/bird.gif" class="background-image" />
+
+        <button id="start-button">woot woot</button>
+      </section>
+
+      <a class="anchor" id="updates-anchor"></a>
+      <section id="updates">
+        <h2 id="updates-title">Featured Updates</h2>
+        <img
+          src="media/grid.jpg"
+          class="background-image"
+          id="grid-background"
+        />
+        <div class="scrolling-container">
+          <div class="card">
+            <img src="media/coco.jpg" class="card-icon" />
+            <div class="card-text">
+              <p class="card-category">Coding</p>
+              <p class="card-headline">Landing page assignment</p>
+              <p class="card-description">Pushed to Github</p>
+            </div>
+          </div>
+          <div class="card">two</div>
+          <div class="card">three</div>
+          <div class="card">four</div>
+          <div class="card">five</div>
         </div>
       </section>
 
       <a class="anchor" id="links-anchor"></a>
       <section id="links">
-        <h2>Social media links</h2><br>
-        <nav id="socials">
+        <p class="preface-text">Things I</p>
+        <p class="emphasized-text">ADORE</p>
+        <br />
+        <nav id="tabs">
           <!-- 
             Tabbed areas:
             Adapted code from https://css-tricks.com/the-checkbox-hack/
           -->
-          <div class="social">
-            <input type="radio" id="twitch" name="social-choices" checked hidden/>
+          <div class="tab">
+            <input
+              type="radio"
+              id="twitch"
+              name="social-choices"
+              checked
+              hidden
+            />
             <label for="twitch">Twitch</label>
             <div class="social-blurb">
-              <img src="media/twitch.png" class="social-image">
+              <img src="media/twitch.png" class="social-image" />
               <p class="title">bloop</p>
               <p class="description">yay</p>
             </div>
           </div>
 
-          <div class="social">
-            <input type="radio" id="youtube" name="social-choices" hidden/>
+          <div class="tab">
+            <input type="radio" id="youtube" name="social-choices" hidden />
             <label for="youtube">YouTube</label>
             <div class="social-blurb">
-              <img src="media/youtube.png" class="social-image">
+              <img src="media/youtube.png" class="social-image" />
               <p class="title">My blurb about YouTube</p>
               <p class="description">nay</p>
             </div>
           </div>
 
-          <div class="social">
-            <input type="radio" id="instagram" name="social-choices" hidden/>
+          <div class="tab">
+            <input type="radio" id="instagram" name="social-choices" hidden />
             <label for="instagram">Instagram</label>
             <div class="social-blurb">
-              <img src="media/instagram.png" class="social-image">
+              <img src="media/instagram.png" class="social-image" />
               <p class="title">My blurb about Instagram</p>
               <p class="description">kay</p>
             </div>
@@ -106,9 +138,10 @@
         <h2>Guestbook</h2>
         <form action="#">
           <label for="username"
-            >Type in your name so I know you stopped by:</label
-          >
+            >Type in your name so I know you stopped by:
+          </label>
           <input type="text" id="username" name="username" />
+          <input type="submit" />
         </form>
       </section>
     </div>
