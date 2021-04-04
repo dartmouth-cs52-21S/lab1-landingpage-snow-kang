@@ -1,26 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Maven Pro", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 3;
+  background-color: #111111;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: #f1eded;
+}
+
+a:hover {
+  color: rgb(132, 240, 240);
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 150vw;
+  height: 100vh;
+  width: 80vw;
+  background-color: rgb(0.06, 0.81, 0, 0.98);
+  z-index: 5;
+  transition: left 1s cubic-bezier(0.06, 0.81, 0, 0.98);
+}
+
+#menu-toggle,
+#menu-x {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2em;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding-top: 80px;
+}
+
+#menu a:not(#menu-x) {
+  display: block;
+  padding: 25px;
+  border-bottom: 2px solid rgb(0.06, 0.81, 0, 0.98);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #111111;
+}
+
+#menu:target {
+  left: 20vw;
+}
+
+#menu:target + #backdrop {
+  position: absolute;
+  display: block;
+  cursor: default;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 4;
+}
+
+.container {
+  position: relative;
+  margin-top: 80px;
+}
+
+/* 
+  Anchor to offset fixed header:
+  Adapted code from https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+*/
+a.anchor {
+  position: relative;
+  top: -80px;
+  visibility: hidden;
 }
 
 section {
   position: relative;
-  width: 100%;
-  padding: 5px;
+  height: 800px;
+  padding: 20px;
 }
 
-img {
+/* ABOUT ME SECTION */
+#coco {
   border-radius: 50%;
   margin: auto;
   display: flex;
-  width: 30%;
+  width: 30vw;
+  max-width: 400px;
   opacity: 1;
 }
 
 #kaleidoscope {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -34,16 +126,86 @@ img {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
-
 .flex-item {
   flex-grow: 1;
   text-align: center;
   border-style: ridge;
   border-radius: 4px;
   padding: 10px;
+}
+
+/* SOCIAL MEDIA SECTION */
+
+#links,
+.social-blurb {
+  background-color: #fafafa;
+}
+
+#socials {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-top: solid gray 1px;
+  border-bottom: solid gray 1px;
+}
+
+.social {
+  flex-grow: 1;
+  justify-content: center;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.social p.title {
+  margin-top: 30px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.social p.description {
+  color: black;
+  text-transform: capitalize;
+  font-size: 1.1em;
+}
+
+.social [type="radio"]:checked ~ .social-blurb {
+  z-index: 1;
+}
+
+.social label,
+.social-blurb {
+  color: rgb(204, 204, 204);
+}
+
+.social [type="radio"]:checked ~ label,
+.social label:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.social-blurb {
+  position: absolute;
+  top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.social-image {
+  max-width: 400px;
+  width: 70vw;
+  border-radius: 50%;
+}
+
+.social-blurb > * {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.social [type="radio"]:checked ~ .social-blurb > * {
+  opacity: 1;
 }

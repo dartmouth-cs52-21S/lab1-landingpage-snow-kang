@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/674cca6809.js"
       crossorigin="anonymous"
@@ -11,50 +16,102 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <a href="#">About me</a> | <a href="#">Links</a> |
-      <a href="#">Projects</a>
-    </nav>
-
-    <h1>Welcome!</h1>
-
-    <section id="about-me">
-      <video autoplay muted loop id="kaleidoscope">
-        <source src="media/kaleidoscope.mp4" type="video/mp4" />
-      </video>
-      <h2>About me</h2>
-      <img src="media/coco.jpg" alt="My puppy, Coco" />
-      <div class="flex-container">
-        <div class="flex-item">Fact 1</div>
-        <div class="flex-item">Fact 2</div>
-        <div class="flex-item">Fact 3</div>
-      </div>
-    </section>
-
-    <section id="links">
-      <!-- Similar to league's < -->
-      <h2>Buttons for social media links</h2>
-      <nav>
-        <button class="social-media-button">Twitch</button>
-        <button class="social-media-button">YouTube</button>
-        <button class="social-media-button">Instagram</button>
+    <header>
+      <!-- 
+        Hamburger menu:
+        Adapted code from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
+       -->
+      <a href="#menu" id="menu-toggle">
+        <i class="far fa-snowflake"></i>
+      </a>
+      <nav id="menu">
+        <a href="#menu-toggle" id="menu-x">
+          <i class="far fa-times-circle"></i>
+        </a>
+        <ul>
+          <li><a href="#about-me-anchor">About me</a></li>
+          <li><a href="#links-anchor">Links</a></li>
+          <li><a href="#projects-anchor">Projects</a></li>
+          <li><a href="#guestbook-anchor">Guestbook</a></li>
+        </ul>
       </nav>
-    </section>
+      <a href="#menu-toggle" id="backdrop" tabindex="-1" hidden></a>
+    </header>
 
-    <section id="projects">
-      <h2>Carousel of projects</h2>
-      <ul class="carousel">
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-      </ul>
-    </section>
-    <h2>Guestbook</h2>
-    <form action="#">
-      <label for="username">Send your username so I know you stopped by:</label>
-      <input type="text" id="username" name="username" />
-    </form>
-    <section></section>
+    <div class="container">
+      <a class="anchor" id="about-me-anchor"></a>
+      <section id="about-me">
+        <img src="media/bird.gif" id="kaleidoscope" />
+        <img src="media/coco.jpg" id="coco" alt="My puppy, Coco" />
+        <button id="">Play</button>
+        <div class="flex-container">
+          <div class="flex-item">Fact 1</div>
+          <div class="flex-item">Fact 2</div>
+          <div class="flex-item">Fact 3</div>
+        </div>
+      </section>
+
+      <a class="anchor" id="links-anchor"></a>
+      <section id="links">
+        <h2>Social media links</h2><br>
+        <nav id="socials">
+          <!-- 
+            Tabbed areas:
+            Adapted code from https://css-tricks.com/the-checkbox-hack/
+          -->
+          <div class="social">
+            <input type="radio" id="twitch" name="social-choices" checked hidden/>
+            <label for="twitch">Twitch</label>
+            <div class="social-blurb">
+              <img src="media/twitch.png" class="social-image">
+              <p class="title">bloop</p>
+              <p class="description">yay</p>
+            </div>
+          </div>
+
+          <div class="social">
+            <input type="radio" id="youtube" name="social-choices" hidden/>
+            <label for="youtube">YouTube</label>
+            <div class="social-blurb">
+              <img src="media/youtube.png" class="social-image">
+              <p class="title">My blurb about YouTube</p>
+              <p class="description">nay</p>
+            </div>
+          </div>
+
+          <div class="social">
+            <input type="radio" id="instagram" name="social-choices" hidden/>
+            <label for="instagram">Instagram</label>
+            <div class="social-blurb">
+              <img src="media/instagram.png" class="social-image">
+              <p class="title">My blurb about Instagram</p>
+              <p class="description">kay</p>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <a class="anchor" id="projects-anchor"></a>
+      <section id="projects">
+        <h2>Carousel of projects</h2>
+        <ul class="carousel">
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </section>
+
+      <a class="anchor" id="guestbook-anchor"></a>
+      <section id="guestbook">
+        <h2>Guestbook</h2>
+        <form action="#">
+          <label for="username"
+            >Type in your name so I know you stopped by:</label
+          >
+          <input type="text" id="username" name="username" />
+        </form>
+      </section>
+    </div>
 
     <footer>
       <i class="fab fa-twitch"></i>
