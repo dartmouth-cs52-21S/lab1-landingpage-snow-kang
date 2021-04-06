@@ -45,7 +45,7 @@
     <div class="container">
       <a class="anchor" id="about-me-anchor"></a>
       <section id="about-me">
-        <h1 class="logo-text">SNOW'S<br />WONDERLAND</h1>
+        <img src="media/logo.png" class="logo" alt="Snowxcone's Wonderland" />
         <img src="media/bird.gif" class="background-image" />
 
         <button id="start-button">woot woot</button>
@@ -68,10 +68,24 @@
               <p class="card-description">Pushed to Github</p>
             </div>
           </div>
-          <div class="card">two</div>
-          <div class="card">three</div>
-          <div class="card">four</div>
-          <div class="card">five</div>
+
+          <div class="card">
+            <img src="media/coco.jpg" class="card-icon" />
+            <div class="card-text">
+              <p class="card-category">Coding</p>
+              <p class="card-headline">Landing page assignment</p>
+              <p class="card-description">Pushed to Github</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="media/coco.jpg" class="card-icon" />
+            <div class="card-text">
+              <p class="card-category">Coding</p>
+              <p class="card-headline">Landing page assignment</p>
+              <p class="card-description">Pushed to Github</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -93,31 +107,31 @@
               checked
               hidden
             />
-            <label for="twitch">Twitch</label>
+            <label for="twitch">Coding</label>
             <div class="social-blurb">
               <img src="media/twitch.png" class="social-image" />
-              <p class="title">bloop</p>
+              <p class="title">beep boop</p>
               <p class="description">yay</p>
             </div>
           </div>
 
           <div class="tab">
             <input type="radio" id="youtube" name="social-choices" hidden />
-            <label for="youtube">YouTube</label>
+            <label for="youtube">Food</label>
             <div class="social-blurb">
               <img src="media/youtube.png" class="social-image" />
-              <p class="title">My blurb about YouTube</p>
-              <p class="description">nay</p>
+              <p class="title">spaghet</p>
+              <p class="description">yum</p>
             </div>
           </div>
 
           <div class="tab">
             <input type="radio" id="instagram" name="social-choices" hidden />
-            <label for="instagram">Instagram</label>
+            <label for="instagram">Friends</label>
             <div class="social-blurb">
               <img src="media/instagram.png" class="social-image" />
-              <p class="title">My blurb about Instagram</p>
-              <p class="description">kay</p>
+              <p class="title">awww</p>
+              <p class="description">yippee</p>
             </div>
           </div>
         </nav>
@@ -125,12 +139,59 @@
 
       <a class="anchor" id="projects-anchor"></a>
       <section id="projects">
-        <h2>Carousel of projects</h2>
-        <ul class="carousel">
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-        </ul>
+        <p class="preface-text">Random</p>
+        <p class="emphasized-text">Filler text</p>
+        <br />
+        <nav id="carousel">
+          <!-- 
+            Tabbed areas:
+            Adapted code from https://css-tricks.com/the-checkbox-hack/
+          -->
+          <input
+            type="radio"
+            id="item1"
+            name="carousel-selection"
+            checked
+            hidden
+          />
+          <div class="carousel-item">
+            <label for="item1" class="middle">
+              <img src="media/instagram.png">
+            </label>
+            <label for="item2" class="right">
+              <img src="media/twitch.png">
+            </label>
+            <p class="carousel-text">Testing 1</p>
+            <!-- <img src="media/instagram.png" class="carousel-main-media"> -->
+          </div>
+
+          <input type="radio" id="item2" name="carousel-selection" hidden />
+          <div class="carousel-item">
+            <label for="item1" class="left">
+              <img src="media/instagram.png">
+            </label>
+            <label for="item2" class="middle">
+              <img src="media/twitch.png">
+            </label>
+            <label for="item3" class="right">
+              <img src="media/youtube.png">
+            </label>
+            <p class="carousel-text">Testing 2</p>
+            <!-- <img src="media/twitch.png" class="carousel-main-media"> -->
+          </div>
+
+          <input type="radio" id="item3" name="carousel-selection" hidden />
+          <div class="carousel-item">
+            <label for="item2" class="left">
+              <img src="media/twitch.png">
+            </label>
+            <label for="item3" class="middle">
+              <img src="media/youtube.png">
+            </label>
+            <p class="carousel-text">Testing 3</p>
+            <!-- <img src="media/youtube.png" class="carousel-main-media"> -->
+          </div>
+        </nav>
       </section>
 
       <a class="anchor" id="guestbook-anchor"></a>
