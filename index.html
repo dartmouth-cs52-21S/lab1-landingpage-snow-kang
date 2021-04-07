@@ -25,7 +25,7 @@
         Hamburger menu:
         Adapted code from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
        -->
-      <img src="media/logo.png" id="header-logo"> 
+      <img src="media/logo.png" id="header-logo" />
       <a href="#menu" id="menu-toggle">
         <i class="far fa-snowflake"></i>
       </a>
@@ -145,34 +145,37 @@
             Carousel:
             Adapted code from https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8
           -->
-          <input type="radio" id="item1" name="carousel-selection" checked hidden/>
+          <input
+            type="radio"
+            id="item1"
+            name="carousel-selection"
+            checked
+            hidden
+          />
           <div class="carousel-item">
             <label for="item2" class="right"></label>
-            <!-- <img src="media/instagram.png" class="carousel-main-media"> -->
           </div>
 
-          <input type="radio" id="item2" name="carousel-selection" hidden/>
+          <input type="radio" id="item2" name="carousel-selection" hidden />
           <div class="carousel-item">
             <label for="item1" class="left"></label>
             <label for="item3" class="right"></label>
-            <!-- <img src="media/twitch.png" class="carousel-main-media"> -->
           </div>
 
-          <input type="radio" id="item3" name="carousel-selection" hidden/>
+          <input type="radio" id="item3" name="carousel-selection" hidden />
           <div class="carousel-item">
             <label for="item2" class="left"></label>
-            <!-- <img src="media/youtube.png" class="carousel-main-media"> -->
           </div>
 
           <div class="carousel-slider">
             <div class="slider-item">
-              <img src="media/instagram.png">
+              <img src="media/instagram.png" />
             </div>
             <div class="slider-item">
-              <img src="media/twitch.png">
+              <img src="media/twitch.png" />
             </div>
             <div class="slider-item">
-              <img src="media/youtube.png">
+              <img src="media/youtube.png" />
             </div>
           </div>
 
@@ -180,19 +183,22 @@
           <p class="carousel-text">twitch</p>
           <p class="carousel-text">youtube</p>
 
-          <img src="media/instagram.png" class="main-carousel-image">
-          <img src="media/twitch.png" class="main-carousel-image">
-          <img src="media/youtube.png" class="main-carousel-image">
+          <img src="media/instagram.png" class="main-carousel-image" />
+          <img src="media/twitch.png" class="main-carousel-image" />
+          <img src="media/youtube.png" class="main-carousel-image" />
 
-          <p class="carousel-subheading">instagram</p>
-          <p class="carousel-subheading">twitch</p>
-          <p class="carousel-subheading">youtube</p>
+          <div id="subheadings">
+            <p class="carousel-subheading">instagram</p>
+            <p class="carousel-subheading">twitch</p>
+            <p class="carousel-subheading">youtube</p>
+        </div>
+
         </nav>
       </section>
 
       <a class="anchor" id="guestbook-anchor"></a>
       <section id="guestbook">
-        <h2>Guestbook</h2>
+        <h2>Guestbook <i class="far fa-heart"></i></h2>
         <form action="#">
           <label for="username"
             >Type in your name so I know you stopped by:

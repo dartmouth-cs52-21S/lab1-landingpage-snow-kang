@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-  color: rgb(132, 240, 240);
+  color: cyan;
 }
 
 #menu {
@@ -98,7 +98,7 @@ a.anchor {
 
 section {
   position: relative;
-  height: 500px;
+  height: 80vh;
   padding: 20px;
 }
 
@@ -122,13 +122,13 @@ section {
   width: 210px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(132, 240, 240);
+  background-color: cyan;
   border: 3px white dotted;
 }
 
 #start-button:hover {
   cursor: pointer;
-  background-color: rgb(169, 255, 255);
+  background-color: rgb(137, 255, 255);
 }
 
 .background-image {
@@ -156,7 +156,7 @@ section {
 }
 
 #grid-background {
-  opacity:0.1;
+  opacity:0.05;
 }
 
 .scrolling-container {
@@ -213,9 +213,11 @@ section {
 
 #links {
   height: 600px;
+  background-color: rgb(250, 250, 250);
 }
 
 .preface-text {
+  font-size: 1em;
   font-style: italic;
 }
 
@@ -223,11 +225,6 @@ section {
   font-size: 2em;
   font-style: italic;
   font-weight: 900;
-}
-
-#links,
-.social-blurb {
-  background-color: #fafafa;
 }
 
 #tabs {
@@ -292,7 +289,7 @@ section {
 
 .social-blurb > * {
   opacity: 0;
-  transition: opacity 2s ease;
+  transition: opacity 1s ease;
 }
 
 .tab [type="radio"]:checked ~ .social-blurb > * {
@@ -302,12 +299,13 @@ section {
 /* Carousel Section */
 
 #projects {
-  height: 600px;
+  height: 650px;
   padding: 0px;
+  background: rgb(206, 206, 206);
 }
 
 #carousel {
-  height: 600px;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -316,7 +314,7 @@ section {
  width: 100%;
  height: 100%;
  z-index: 1;
- border: cyan solid 2px;
+ border: white solid 2px;
 }
 
 .carousel-text {
@@ -353,14 +351,9 @@ section {
   opacity: 1;
 }
 
-.carousel-item {
-  padding-bottom: 30px;
-  font-size: 2em;
-}
-
 .carousel-item label {
   position: absolute;
-  bottom: 180px;
+  top: 48vh;
   height: 100px;
   width: 100px;
   z-index: 1;
@@ -376,7 +369,7 @@ label.right {
 
 .carousel-slider {
   position: absolute;
-  bottom: 180px;
+  top: 48vh;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -433,6 +426,7 @@ label.right {
 #carousel [type="radio"]:nth-of-type(1):checked ~ .carousel-slider .slider-item:nth-child(1) > img {
   max-width: 130px;
   max-height: 130px;
+  border: cyan solid 2px;
 }
 
 #carousel [type="radio"]:nth-of-type(2):checked ~ .carousel-slider {
@@ -442,6 +436,7 @@ label.right {
 #carousel [type="radio"]:nth-of-type(2):checked ~ .carousel-slider .slider-item:nth-child(2) > img {
   max-width: 130px;
   max-height: 130px;
+  border: cyan solid 2px;
 }
 
 #carousel [type="radio"]:nth-of-type(3):checked ~ .carousel-slider {
@@ -451,6 +446,7 @@ label.right {
 #carousel [type="radio"]:nth-of-type(3):checked ~ .carousel-slider .slider-item:nth-child(3) > img {
   max-width: 130px;
   max-height: 130px;
+  border: cyan solid 2px;
 }
 
 .carousel-slider {
@@ -465,6 +461,7 @@ label.right {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
+  border: solid cyan 3px;
   opacity: 0;
   transition: opacity .5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -483,27 +480,72 @@ label.right {
 
 .carousel-subheading {
   position: absolute;
-  bottom: 60px;
+  bottom: 30px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  height: 50px;
   opacity: 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
 }
 
-#carousel [type="radio"]:nth-of-type(1):checked ~ .carousel-subheading:nth-of-type(1) {
+#carousel [type="radio"]:nth-of-type(1):checked ~ #subheadings .carousel-subheading:nth-child(1) {
   opacity: 1;
 }
 
-#carousel [type="radio"]:nth-of-type(2):checked ~ .carousel-subheading:nth-of-type(2) {
+#carousel [type="radio"]:nth-of-type(2):checked ~ #subheadings .carousel-subheading:nth-child(2) {
   opacity: 1;
 }
 
-#carousel [type="radio"]:nth-of-type(3):checked ~ .carousel-subheading:nth-of-type(3) {
+#carousel [type="radio"]:nth-of-type(3):checked ~ #subheadings .carousel-subheading:nth-child(3) {
   opacity: 1;
 }
 
-/* TODO: Desktop version */
-@media only screen and (max-width: 600px) {
+#guestbook {
+  height: 400px;
+  padding-top: 150px;
+  background: linear-gradient(90deg, rgba(224,224,224,1) 0%, rgba(249,249,249,1) 100%);
+}
+#guestbook i {
+  color: rgb(255, 166, 236);
+}
+
+footer {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer i {
+  color: white;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+/* Desktop version */
+@media only screen and (min-width: 600px) {
+  /* Updates section */
+  #updates {
+    height: 280px;
+  }
   
+  .scrolling-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card {
+    min-width: 250px;
+    width: 25vw;
+    height: 150px;
+  }
+
+  #links {
+    height: 900px;
+  }
 }
