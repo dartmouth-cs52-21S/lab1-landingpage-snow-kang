@@ -275,13 +275,15 @@ section {
   opacity: 1;
 }
 
-/* Carousel Section */
+/* CAROUSEL SECTION */
 
 #projects {
   height: 700px;
-  background: rgb(206, 206, 206);
+  background: rgb(0, 0, 0);
   --slider-main-width: 130px;
   --slider-sub-width: 100px;
+  --label-position-from-top: 50%;
+  --label-margin: calc(50vw - 3*var(--slider-main-width)/2 + 5px);
 }
 
 #carousel {
@@ -314,9 +316,9 @@ section {
   align-items: center;
   left: 0;
   right: 0;
-  bottom: 100px;
+  top: calc(var(--label-position-from-top) + 150px);
   opacity: 0;
-  /* transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1); */
+  transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 #carousel
@@ -337,25 +339,37 @@ section {
   opacity: 1;
 }
 
+#carousel [type="radio"]:not(:checked) + .carousel-item {
+  display: none;
+}
+
+#carousel [type="radio"]:checked + .carousel-item {
+  position: absolute;
+  top: var(--label-position-from-top);
+  left: 0;
+  width: 100%;
+  height: var(--slider-main-width);
+}
+
 .carousel-item label {
   position: absolute;
-  top: 48vh;
+  top: 0px;
   height: var(--slider-sub-width);
   width: var(--slider-sub-width);
   z-index: 1;
 }
 
 label.left {
-  left: 10px;
+  left: var(--label-margin);
 }
 
 label.right {
-  right: 10px;
+  right: var(--label-margin);
 }
 
 .carousel-slider {
   position: absolute;
-  top: 48vh;
+  top: var(--label-position-from-top);
   left: 0;
   right: 0;
   margin-left: auto;
@@ -373,26 +387,14 @@ label.right {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 130px;
+  height: 130px;
 }
 
 .slider-item > * {
   max-height: var(--slider-sub-width);
   max-width: var(--slider-sub-width);
   transition: all ease 1s;
-}
-
-#carousel [type="radio"]:not(:checked) + .carousel-item {
-  display: none;
-}
-
-#carousel [type="radio"]:checked + .carousel-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--slider-main-width)
 }
 
 .carousel-slider .slider-item:nth-of-type(1) {
@@ -486,7 +488,7 @@ label.right {
 
 .carousel-subheading {
   position: absolute;
-  bottom: 30px;
+  top: calc(var(--label-position-from-top) + 250px);
   left: 0;
   right: 0;
   margin-left: auto;
@@ -628,11 +630,7 @@ footer i {
   }
 
   /* Carousel section */
-  label.left {
-    left: 10px;
-  }
-  
-  label.right {
-    right: 10px;
+  #projects {
+    height: 600px;
   }
 }
