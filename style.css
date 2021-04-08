@@ -52,6 +52,8 @@ a:hover {
 /* Main body underneath the header */
 .container {
   position: relative;
+  padding: 0;
+  margin: 0;
   margin-top: 80px;
 }
 
@@ -74,9 +76,18 @@ section {
 
 #about-me {
   display: flex;
-  height: 600px;
+  height: 90vh;
   flex-direction: column;
   justify-content: center;
+
+  /* Parallax effect 
+    Code from https://www.w3schools.com/howto/howto_css_parallax.asp 
+  */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("media/bird.gif")
 }
 
 .logo {
@@ -127,7 +138,7 @@ section {
 }
 
 #grid-background {
-  opacity: 0.05;
+  opacity: 0.1;
 }
 
 .scrolling-container {
@@ -188,7 +199,8 @@ section {
 
 #links {
   height: 800px;
-  background-color: rgb(245, 245, 245);
+  /* background-color: rgb(245, 245, 245); */
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(206, 206, 206) 100%);
 }
 
 .preface-text {
@@ -244,7 +256,7 @@ section {
 
 .tab label,
 .social-blurb {
-  color: rgb(204, 204, 204);
+  color: rgb(189, 189, 189);
 }
 
 .tab [type="radio"]:checked ~ label,
@@ -285,7 +297,8 @@ section {
 #projects {
   height: 750px;
   overflow-y: hidden;
-  background: rgb(37, 37, 37);
+  background-color: rgb(68, 68, 68);
+  background-image: url("media/stars.gif"), linear-gradient(90deg, rgb(80, 80, 80) 0%, rgb(47, 47, 47)100%);
   --slider-main-width: 130px;
   --slider-sub-width: 100px;
   --label-position-from-bottom: 35%;
@@ -667,17 +680,13 @@ footer i:hover {
     padding-top: 80px;
   }
 
-  #about-me {
-    height: 450px;
-  }
-
   .card {
     width: 240px;
   }
 
   /* Links section */
   #links {
-    height: 600px;
+    height: 580px;
   }
   #tabs {
     width: 100%;
