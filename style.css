@@ -59,6 +59,7 @@ a:hover {
   padding: 0;
   margin: 0;
   margin-top: 80px !important;
+  --about-me-height: 600px;
 }
 
 /* 
@@ -80,19 +81,15 @@ section {
 
 #about-me {
   display: flex;
-  height: 600px;
+  height: var(--about-me-height);
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(
-    180deg,
-    rgb(100, 139, 155) 0%,
-    rgb(0, 0, 0) 100%
-  );;
+  background: linear-gradient(180deg, rgb(100, 139, 155) 0%, rgb(0, 0, 0) 100%);
 }
 
 #opening-video {
   width: 80vw;
-  height: 620px;
+  height: var(--about-me-height);
   position: absolute;
   top: 50px;
   left: 10%;
@@ -156,7 +153,7 @@ section {
   letter-spacing: 2px;
   text-align: left;
   margin-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 #grid-background {
@@ -178,6 +175,10 @@ section {
   height: 110px;
   background-color: #fafafa;
   border: solid 1px rgb(216, 216, 216);
+}
+
+.card:not(:last-child) {
+  margin-right: 25px;
 }
 
 .card-icon {
@@ -704,13 +705,21 @@ footer i:hover {
     padding-top: 80px;
   }
 
+  .container {
+    --about-me-height: 400px;
+  }
+
   /* About me section */
   #about-me {
-    height: 500px;
+    height: var(--about-me-height);
   }
 
   #opening-video {
-    height: 500px;
+    height: var(--about-me-height);
+  }
+
+  #updates {
+    height: 250px;
   }
 
   /* Updates section */
