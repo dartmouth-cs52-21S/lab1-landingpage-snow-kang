@@ -20,6 +20,7 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 - In mobile view, the "Featured Updates" section has horizontal sliding
 - The "Links section" has vertical selection tabs for desktop and horizontal for mobile
 - Menu items, footer items, and main button have hover effects (color change)
+- Functional on all device sizes 
 
 ## Screenshots
 * My HTML Skeleton:
