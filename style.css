@@ -21,6 +21,11 @@ header {
   overflow-x:visible;
 }
 
+#header-logo {
+  width: 100px;
+  height: 80px;
+}
+
 a {
   text-decoration: none;
   color: #f1eded;
@@ -164,6 +169,8 @@ section {
 
 .card-icon {
   padding: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 .card-text {
