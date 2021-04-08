@@ -69,7 +69,7 @@ a:hover {
 a.anchor {
   position: relative;
   visibility: hidden;
-  top: -80px;
+  top: -80px !important;
 }
 
 section {
@@ -128,7 +128,7 @@ section {
   z-index: -1;
 }
 
-/* UPDATES SECTION */
+/* Updates section */
 #updates {
   height: 220px;
   padding: 20px;
@@ -202,8 +202,7 @@ section {
   font-size: 0.8em;
 }
 
-/* SOCIAL MEDIA SECTION */
-
+/* Links social media tabs section */
 #links {
   height: 800px;
   /* background-color: rgb(245, 245, 245); */
@@ -299,8 +298,7 @@ section {
   opacity: 1;
 }
 
-/* CAROUSEL SECTION */
-
+/* Projects carousel section */
 #projects {
   height: 750px;
   overflow-y: hidden;
@@ -588,7 +586,7 @@ label.double-right {
 }
 
 
-/* Guestbook section */
+/* Guestbook user input section */
 #guestbook {
   height: 400px;
   padding-top: 150px;
@@ -598,6 +596,7 @@ label.double-right {
   color: rgb(255, 166, 236);
 }
 
+/* Footer section */
 footer {
   background-color: #111111;;
   height: 100px;
@@ -683,14 +682,12 @@ footer i:hover {
     padding-top: 80px;
   }
 
-  /* About me Section */
-
+  /* About me section */
   #about-me {
     height: 550px;
   }
 
-  /* Updates Section */
-
+  /* Updates section */
   .card {
     width: 240px;
   }
@@ -717,7 +714,7 @@ footer i:hover {
     margin: 10px;
   }
 
-  /* Carousel section */
+  /* Projects carousel section */
   #projects {
     height: 650px;
   }
