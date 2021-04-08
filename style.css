@@ -278,12 +278,18 @@ section {
 /* CAROUSEL SECTION */
 
 #projects {
-  height: 700px;
+  height: 750px;
   background: rgb(0, 0, 0);
   --slider-main-width: 130px;
   --slider-sub-width: 100px;
-  --label-position-from-top: 50%;
+  --label-position-from-bottom: 35%;
   --label-margin: calc(50vw - 3*var(--slider-main-width)/2 + 5px);
+}
+
+#projects h1 {
+  color: white;
+  text-transform: uppercase;
+  padding-top: 50px;
 }
 
 #carousel {
@@ -316,11 +322,16 @@ section {
   align-items: center;
   left: 0;
   right: 0;
-  top: calc(var(--label-position-from-top) + 150px);
+  bottom: calc(var(--label-position-from-bottom) - 85px);
   opacity: 0;
   transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+#carousel [type="radio"]:not(:checked) + .carousel-item {
+  display: none;
+}
+
+/* If the nth label is selected, display the nth title text */
 #carousel
   [type="radio"]:nth-of-type(1):checked
   ~ .carousel-text:nth-of-type(1) {
@@ -339,13 +350,9 @@ section {
   opacity: 1;
 }
 
-#carousel [type="radio"]:not(:checked) + .carousel-item {
-  display: none;
-}
-
 #carousel [type="radio"]:checked + .carousel-item {
   position: absolute;
-  top: var(--label-position-from-top);
+  bottom: var(--label-position-from-bottom);
   left: 0;
   width: 100%;
   height: var(--slider-main-width);
@@ -367,9 +374,18 @@ label.right {
   right: var(--label-margin);
 }
 
+label.double-left {
+  left: calc(var(--label-margin) - var(--slider-sub-width) - 12px);
+}
+
+label.double-right {
+  right: calc(var(--label-margin) - var(--slider-sub-width));
+}
+
+
 .carousel-slider {
   position: absolute;
-  top: var(--label-position-from-top);
+  bottom: var(--label-position-from-bottom);
   left: 0;
   right: 0;
   margin-left: auto;
@@ -394,9 +410,10 @@ label.right {
 .slider-item > * {
   max-height: var(--slider-sub-width);
   max-width: var(--slider-sub-width);
-  transition: all ease 1s;
+  transition: all ease .1s;
 }
 
+/* Initial starting positions for slider's images */
 .carousel-slider .slider-item:nth-of-type(1) {
   transform: translateX(-100%);
 }
@@ -409,10 +426,24 @@ label.right {
   transform: translateX(100%);
 }
 
+/* Translate the carousel based on which label is pressed */
 #carousel [type="radio"]:nth-of-type(1):checked ~ .carousel-slider {
   transform: translateX(100%);
 }
 
+#carousel [type="radio"]:nth-of-type(2):checked ~ .carousel-slider {
+  transform: translateX(0%);
+}
+
+#carousel [type="radio"]:nth-of-type(3):checked ~ .carousel-slider {
+  transform: translateX(-100%);
+}
+
+.carousel-slider {
+  transition: transform 1s ease 0s;
+}
+
+/* If the nth label is selected, show the nth slider image with a cyan border */
 #carousel
   [type="radio"]:nth-of-type(1):checked
   ~ .carousel-slider
@@ -421,10 +452,6 @@ label.right {
   max-width: var(--slider-main-width);
   max-height: var(--slider-main-width);
   border: cyan solid 2px;
-}
-
-#carousel [type="radio"]:nth-of-type(2):checked ~ .carousel-slider {
-  transform: translateX(0%);
 }
 
 #carousel
@@ -437,10 +464,6 @@ label.right {
   border: cyan solid 2px;
 }
 
-#carousel [type="radio"]:nth-of-type(3):checked ~ .carousel-slider {
-  transform: translateX(-100%);
-}
-
 #carousel
   [type="radio"]:nth-of-type(3):checked
   ~ .carousel-slider
@@ -451,23 +474,7 @@ label.right {
   border: cyan solid 2px;
 }
 
-.carousel-slider {
-  transition: transform 1s ease 0s;
-}
-
-.main-carousel-image {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border: solid cyan 3px;
-  opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
+/* If nth label is selected, display the nth image */
 #carousel
   [type="radio"]:nth-of-type(1):checked
   ~ .main-carousel-image:nth-of-type(1) {
@@ -486,20 +493,23 @@ label.right {
   opacity: 1;
 }
 
-.carousel-subheading {
+.main-carousel-image {
   position: absolute;
-  top: calc(var(--label-position-from-top) + 250px);
+  width: 45%;
+  max-width: 300px;
+  min-width: 230px;
+  top: 30px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
+  border-radius: 50%;
+  border: solid cyan 3px;
   opacity: 0;
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
+  transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+/* If nth label is selected, display the nth subheading */
 #carousel
   [type="radio"]:nth-of-type(1):checked
   ~ #subheadings
@@ -521,6 +531,34 @@ label.right {
   opacity: 1;
 }
 
+.carousel-subheading {
+  position: absolute;
+  bottom: calc(var(--label-position-from-bottom) - 150px);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  opacity: 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+/* Ensuring equal spacing between slider images */ 
+#carousel
+  [type="radio"]:nth-of-type(1):checked
+  ~ .carousel-slider .slider-item:nth-of-type(3) {
+  justify-content: flex-start;
+}
+
+#carousel
+  [type="radio"]:nth-of-type(3):checked
+  ~ .carousel-slider .slider-item:nth-of-type(1) {
+  justify-content: flex-end;
+}
+
+
 /* Guestbook section */
 #guestbook {
   height: 400px;
@@ -537,17 +575,32 @@ label.right {
 
 footer {
   background-color: black;
-  height: 80px;
+  height: 100px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
 footer i {
   color: white;
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
+
+footer i:hover {
+  color: cyan;
+}
+
+.footer-categories {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-categories a{
+  margin: 30px;
+}
+
 
 /* MOBILE VERSION */
 @media only screen and (max-width: 600px) {
@@ -629,8 +682,33 @@ footer i {
     margin: 0px;
   }
 
+  .tab {
+    margin: 10px;
+  }
+
   /* Carousel section */
   #projects {
-    height: 600px;
+    height: 650px;
   }
+
+  #projects h1 {
+    padding-top: 10px;
+  }
+
+  /* Vertical footer */
+  footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-categories a{
+    margin: 10px;
+  }
+  
 }
