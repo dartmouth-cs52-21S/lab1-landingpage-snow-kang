@@ -285,7 +285,7 @@ section {
 #projects {
   height: 750px;
   overflow-y: hidden;
-  background: rgb(0, 0, 0);
+  background: rgb(37, 37, 37);
   --slider-main-width: 130px;
   --slider-sub-width: 100px;
   --label-position-from-bottom: 35%;
@@ -310,6 +310,10 @@ section {
   z-index: 1;
   border: white solid 2px;
 }
+
+.carousel-item label:hover {
+  cursor: pointer;
+} 
 
 .carousel-text {
   text-transform: uppercase;
@@ -373,11 +377,11 @@ section {
 }
 
 label.left {
-  left: var(--label-margin);
+  left: calc(var(--label-margin) + 10px);
 }
 
 label.right {
-  right: var(--label-margin);
+  right: calc(var(--label-margin) + 10px);
 }
 
 label.double-left {
@@ -387,7 +391,6 @@ label.double-left {
 label.double-right {
   right: calc(var(--label-margin) - var(--slider-sub-width));
 }
-
 
 .carousel-slider {
   position: absolute;
