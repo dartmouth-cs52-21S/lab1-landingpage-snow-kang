@@ -81,7 +81,7 @@ section {
 
 #about-me {
   display: flex;
-  height: calc(100% - 80px);
+  height: 700px;
   flex-direction: column;
   justify-content: center;
 
@@ -682,6 +682,14 @@ footer i:hover {
     display: block; 
     padding-top: 80px;
   }
+
+  /* About me Section */
+
+  #about-me {
+    height: 550px;
+  }
+
+  /* Updates Section */
 
   .card {
     width: 240px;
