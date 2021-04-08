@@ -496,7 +496,7 @@ label.double-right {
 .main-carousel-image {
   position: absolute;
   width: 45%;
-  max-width: 300px;
+  max-width: 280px;
   min-width: 230px;
   top: 30px;
   left: 0;
@@ -574,7 +574,7 @@ label.double-right {
 }
 
 footer {
-  background-color: black;
+  background-color: #111111;;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -603,7 +603,7 @@ footer i:hover {
 
 
 /* MOBILE VERSION */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   /* Hamburger menu */
   #menu-toggle,
   #menu-x {
@@ -693,6 +693,10 @@ footer i:hover {
 
   #projects h1 {
     padding-top: 10px;
+  }
+
+  .main-carousel-image {
+    max-width: 250px;
   }
 
   /* Vertical footer */
