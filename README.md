@@ -25,18 +25,28 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 * My HTML Skeleton:
 ![html skeleton](https://user-images.githubusercontent.com/38738497/113966744-aa9f0380-97fd-11eb-941b-db8259654490.PNG)
 
-* Desktop vs Mobile Screen 1
+# Desktop vs Mobile screens 
+* Screen 1
 ![desktop vs mobile screen 1](https://user-images.githubusercontent.com/38738497/113967180-7a0b9980-97fe-11eb-86f7-47deb7e1ca2f.PNG)
 
-* Desktop vs Mobile Screen 2
+* Screen 2
 ![desktop vs mobile screen 2](https://user-images.githubusercontent.com/38738497/113967218-8bed3c80-97fe-11eb-899e-8ffa47be649b.PNG)
 
-* Desktop vs Mobile Screen 3
+* Screen 3
 ![desktop vs mobile screen 3](https://user-images.githubusercontent.com/38738497/113975576-b7c3ee80-980d-11eb-8af6-fc3b3eb81e78.PNG)
 
-* Desktop vs Mobile Screen 4
+* Screen 4
 ![desktop vs mobile screen 4](https://user-images.githubusercontent.com/38738497/113975587-bbf00c00-980d-11eb-9535-9fd07f649342.PNG)
 
+# Comparisons to League Website
+* Screen 1 
+![compare1](https://user-images.githubusercontent.com/38738497/113976897-ba274800-980f-11eb-8ac2-6202516f3dd0.PNG)
+
+* Screen 2
+![compare2](https://user-images.githubusercontent.com/38738497/113976922-c4494680-980f-11eb-8b38-c9c17a02dddf.PNG)
+
+* Screen 3
+![compare3](https://user-images.githubusercontent.com/38738497/113976934-c7dccd80-980f-11eb-9663-060caacead5e.PNG)
 
 
 
