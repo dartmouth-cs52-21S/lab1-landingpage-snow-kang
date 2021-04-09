@@ -55,6 +55,7 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 
 
 * Screen 3
-![compare3](https://user-images.githubusercontent.com/38738497/114111264-94e61880-98a7-11eb-8aae-d29c1cb693a1.PNG)
+![compare3](https://user-images.githubusercontent.com/38738497/114123471-5f015e00-98c0-11eb-840d-88ea679ad8bc.PNG)
+
 
 
