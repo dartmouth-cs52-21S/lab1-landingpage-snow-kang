@@ -38,7 +38,7 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 
 
 * Screen 3
-![screen3](https://user-images.githubusercontent.com/38738497/114111046-fbb70200-98a6-11eb-8d85-3578202afa0f.PNG)
+![screen3](https://user-images.githubusercontent.com/38738497/114124294-1ea2df80-98c2-11eb-81b1-b494a45f4fa5.PNG)
 
 
 * Screen 4
