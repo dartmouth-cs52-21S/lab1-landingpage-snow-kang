@@ -1,6 +1,8 @@
 
 # Cones of Snow Website
 
+** Note: I'm continuing to add more design features for fun but you can grade this at any point as all of the core features have been done from the time it was due **
+
 My landing page based off of https://na.leagueoflegends.com/en-us/
 
 [deployed url](https://dartmouth-cs52-21s.github.io/lab1-landingpage-snow-kang/)
