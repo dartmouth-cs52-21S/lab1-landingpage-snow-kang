@@ -13,7 +13,7 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 - I was not able to recreate the the opening visual on the league website. I inspected the page and they have two identical videos playing synchronously, one blurred in the background and one on top to give the effect of the blurred edges. 
 
 ## Extra Credit
-- Created a rendition of the carousel from https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8 to imitate the one on league's webpage. Added the functionality that you click on any image in the carousel slider (one apart and two apart) to transition to it with a sliding, resizing, and recoloring effect
+- Created a rendition of the carousel from https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8 to imitate the one on league's webpage. Added the functionality that you click on any image in the carousel slider (one apart and two apart) to transition to it with a sliding, resizing, and recoloring effect. There is a hover glow effect for sliding to a different image.
 - Created tabbed areas using https://css-tricks.com/the-checkbox-hack/
 - Created dynamic hamburger menu with https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 - Menu items have anchors to the corresponding section
@@ -28,26 +28,31 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 
 # Desktop vs Mobile screens 
 * Screen 1
-![desktop vs mobile screen 1](https://user-images.githubusercontent.com/38738497/113967180-7a0b9980-97fe-11eb-86f7-47deb7e1ca2f.PNG)
+![screen1](https://user-images.githubusercontent.com/38738497/114111019-ecd04f80-98a6-11eb-8059-3343ad7a672d.PNG)
+
 
 * Screen 2
-![desktop vs mobile screen 2](https://user-images.githubusercontent.com/38738497/113967218-8bed3c80-97fe-11eb-899e-8ffa47be649b.PNG)
+![screen2](https://user-images.githubusercontent.com/38738497/114111028-f3f75d80-98a6-11eb-9e48-055fc8bcc313.PNG)
+
 
 * Screen 3
-![desktop vs mobile screen 3](https://user-images.githubusercontent.com/38738497/113975576-b7c3ee80-980d-11eb-8af6-fc3b3eb81e78.PNG)
+![screen3](https://user-images.githubusercontent.com/38738497/114111046-fbb70200-98a6-11eb-8d85-3578202afa0f.PNG)
+
 
 * Screen 4
-![desktop vs mobile screen 4](https://user-images.githubusercontent.com/38738497/113975587-bbf00c00-980d-11eb-9535-9fd07f649342.PNG)
+![screen4](https://user-images.githubusercontent.com/38738497/114111048-ff4a8900-98a6-11eb-8a88-1188323a15ce.PNG)
+
 
 # Comparisons to League Website
 * Screen 1 
-![compare1](https://user-images.githubusercontent.com/38738497/113976897-ba274800-980f-11eb-8ac2-6202516f3dd0.PNG)
+![compare1](https://user-images.githubusercontent.com/38738497/114111260-9283be80-98a7-11eb-940c-42b9ac39f9b3.PNG)
+
 
 * Screen 2
-![compare2](https://user-images.githubusercontent.com/38738497/113976922-c4494680-980f-11eb-8b38-c9c17a02dddf.PNG)
+![compare2](https://user-images.githubusercontent.com/38738497/114111261-93b4eb80-98a7-11eb-9020-5187e1d831bb.PNG)
+
 
 * Screen 3
-![compare3](https://user-images.githubusercontent.com/38738497/113976934-c7dccd80-980f-11eb-9663-060caacead5e.PNG)
-
+![compare3](https://user-images.githubusercontent.com/38738497/114111264-94e61880-98a7-11eb-8aae-d29c1cb693a1.PNG)
 
 
