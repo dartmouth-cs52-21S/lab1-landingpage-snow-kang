@@ -325,6 +325,7 @@ section {
 /* Projects carousel section */
 #projects {
   height: 900px;
+  overflow-y: hidden;
   --slider-main-width: 130px;
   --slider-sub-width: 100px;
   --label-position-from-bottom: 28%;
