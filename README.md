@@ -47,11 +47,11 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 
 # Comparisons to League Website
 * Screen 1 
-![compare1](https://user-images.githubusercontent.com/38738497/114111260-9283be80-98a7-11eb-940c-42b9ac39f9b3.PNG)
+![compare1](https://user-images.githubusercontent.com/38738497/114124087-9f151080-98c1-11eb-88ae-197eff2218cb.PNG)
 
 
 * Screen 2
-![compare2](https://user-images.githubusercontent.com/38738497/114111261-93b4eb80-98a7-11eb-9020-5187e1d831bb.PNG)
+![compare2](https://user-images.githubusercontent.com/38738497/114124083-9c1a2000-98c1-11eb-831f-99cdba9a2186.PNG)
 
 
 * Screen 3
