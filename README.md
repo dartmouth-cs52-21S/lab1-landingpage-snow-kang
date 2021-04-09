@@ -17,7 +17,7 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 ## Extra Credit
 - Created a rendition of the carousel from https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8 to imitate the one on league's webpage. Added the functionality that you click on any image in the carousel slider (one apart and two apart) to transition to it with a sliding, resizing, and recoloring effect. There is a hover glow effect for sliding to a different image.
 - Created tabbed areas using https://css-tricks.com/the-checkbox-hack/
-- Created dynamic hamburger menu with https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
+- Created dynamic hamburger menu with https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793. When the menu is open, you can click either the x button or anywhere outside the menu to close.
 - Menu items have anchors to the corresponding section
 - In mobile view, the "Featured Updates" section has horizontal sliding
 - The "Links section" has vertical selection tabs for desktop and horizontal for mobile
