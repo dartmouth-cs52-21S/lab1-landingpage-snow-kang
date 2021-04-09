@@ -271,13 +271,17 @@ section {
 }
 
 .tab p.description {
-  color: rgb(146, 146, 146);
+  color: rgb(58, 58, 58);
   text-transform: lowercase;
   font-size: 1.1em;
 }
 
 .tab [type="radio"]:checked ~ .social-blurb {
   z-index: 1;
+}
+
+.tab label {
+  font-weight: bold;
 }
 
 .tab label,
