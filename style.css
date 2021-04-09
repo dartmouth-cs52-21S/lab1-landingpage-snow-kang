@@ -123,6 +123,7 @@ section {
   border: 3px white dotted;
   font-size: 1em;
   z-index: 1;
+  border-radius: 1em;
 }
 
 #start-button:hover {
