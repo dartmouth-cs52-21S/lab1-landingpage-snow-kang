@@ -38,23 +38,24 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 
 
 * Screen 3
-![screen3](https://user-images.githubusercontent.com/38738497/114111046-fbb70200-98a6-11eb-8d85-3578202afa0f.PNG)
+![screen3](https://user-images.githubusercontent.com/38738497/114124294-1ea2df80-98c2-11eb-81b1-b494a45f4fa5.PNG)
 
 
 * Screen 4
-![screen4](https://user-images.githubusercontent.com/38738497/114111048-ff4a8900-98a6-11eb-8a88-1188323a15ce.PNG)
+![screen4](https://user-images.githubusercontent.com/38738497/114123146-bbb04900-98bf-11eb-84f9-6d3a15c7b0c4.PNG)
 
 
 # Comparisons to League Website
 * Screen 1 
-![compare1](https://user-images.githubusercontent.com/38738497/114111260-9283be80-98a7-11eb-940c-42b9ac39f9b3.PNG)
+![compare1](https://user-images.githubusercontent.com/38738497/114124087-9f151080-98c1-11eb-88ae-197eff2218cb.PNG)
 
 
 * Screen 2
-![compare2](https://user-images.githubusercontent.com/38738497/114111261-93b4eb80-98a7-11eb-9020-5187e1d831bb.PNG)
+![compare2](https://user-images.githubusercontent.com/38738497/114124083-9c1a2000-98c1-11eb-831f-99cdba9a2186.PNG)
 
 
 * Screen 3
-![compare3](https://user-images.githubusercontent.com/38738497/114111264-94e61880-98a7-11eb-8aae-d29c1cb693a1.PNG)
+![compare3](https://user-images.githubusercontent.com/38738497/114123471-5f015e00-98c0-11eb-840d-88ea679ad8bc.PNG)
+
 
 
