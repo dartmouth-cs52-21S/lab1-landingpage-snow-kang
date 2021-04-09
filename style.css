@@ -129,6 +129,7 @@ section {
 #start-button:hover {
   cursor: pointer;
   font-size: 1.5em;
+  border-radius: 0%;
   box-shadow: 0px 5px 15px rgba(255, 255, 255);
   transition: font-size ease 0.2s;
 }
@@ -629,12 +630,72 @@ label.double-right {
 
 /* Guestbook user input section */
 #guestbook {
-  height: 400px;
-  padding-top: 150px;
+  height: 700px;
   background-color: rgba(224, 224, 224, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #guestbook i {
   color: rgb(255, 166, 236);
+}
+
+.input-card { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+  width: calc(var(--full-width) * 2 / 3);
+  max-width: 700px;
+  min-width: 200px;
+  border: 4px cyan solid;
+  border-radius: .3em;
+  box-shadow: 8px 8px 0 black;
+  background-color: cyan;
+  padding: 30px;
+}
+
+.input-card #username {
+  border-radius: .5em;
+  width: 100%;
+  height: 2.5em;
+  padding: 10px;
+  text-align: left;
+  font-size: 1em;
+  color: rgb(0, 93, 93);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#guestbook-form [type="submit"] {
+  background-color: pink;
+  border: none;
+  border-radius: .5em;
+  width: 20%;
+  min-width: 80px;
+  max-width: 150px;
+  height: 20%;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#guestbook-form [type="submit"]:hover{
+  cursor: pointer;
+  background-color: rgb(255, 227, 232);
+}
+
+.input-card > * {
+  text-align: left;
+}
+
+.input-card h2 {
+  flex-grow: 1;
+}
+
+.input-card #guestbook-form {
+  flex-grow: 2;
 }
 
 /* Footer section */
@@ -667,7 +728,7 @@ footer i:hover {
 }
 
 /* MOBILE VERSION */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
   /* Hamburger menu */
   #menu-toggle,
   #menu-x {
@@ -777,6 +838,20 @@ footer i:hover {
 
   .main-carousel-image {
     max-width: 250px;
+  }
+
+  /* Guestbook */
+  #guestbook {
+    height: 500px;
+  }
+  
+  .input-card { 
+    height: 300px;
+    width: calc(var(--full-width) * 2 / 3);
+  }
+
+  .input-card > * {
+    text-align: center;
   }
 
   /* Vertical footer */
