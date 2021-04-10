@@ -11,7 +11,7 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 - I was able to mimic most of the website from league. I chose the sections I thought would be the most challenging and had a lot of fun trying to recreate them. 
 
 ## What Didn't
-- I spent so much time adding features I thought were cool that I didn't have a lot of time to work on the content itself so I have a lot of filler text/images and not a lot of cohesion in the ideas per section. in the future i'll work on managing my time better, getting all the basic functionality working with a nice design before diving into adding features.
+- I spent so much time adding features I thought were cool that I didn't have a lot of time to work on the content itself so I have a lot of filler text/images and not a lot of cohesion in the ideas per section. in the future i'll work on managing my time better, getting all the basic functionality working with a nice design before diving into adding features. (I also struggle w/ aesthetics LOL if you can't tell D: i have negative design sense)
 - I was not able to recreate the the opening visual on the league website. I inspected the page and they have two identical videos playing synchronously, one blurred in the background and one on top to give the effect of the blurred edges. 
 - While the page anchors work using google's dev tools, on the iPhone when i open the link it assumes the header is not there as the default behavior is to hide the header upon scrolling. this makes the anchors off by the length of the header in practice but not when testing it on chrome.
 
