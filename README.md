@@ -13,6 +13,7 @@ My landing page based off of https://na.leagueoflegends.com/en-us/
 ## What Didn't
 - I spent so much time adding features I thought were cool that I didn't have a lot of time to work on the content itself so I have a lot of filler text/images and not a lot of cohesion in the ideas per section. in the future i'll work on managing my time better, getting all the basic functionality working with a nice design before diving into adding features.
 - I was not able to recreate the the opening visual on the league website. I inspected the page and they have two identical videos playing synchronously, one blurred in the background and one on top to give the effect of the blurred edges. 
+- While the page anchors work using google's dev tools, on the iPhone when i open the link it assumes the header is not there as it's default behavior is to hide the header upon scrolling. this makes the anchors off by the length of the header in practice.
 
 ## Extra Credit
 - Created a rendition of the carousel from https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8 to imitate the one on league's webpage. Added the functionality that you click on any image in the carousel slider (one apart and two apart) to transition to it with a sliding, resizing, and recoloring effect. There is a hover glow effect for sliding to a different image.
